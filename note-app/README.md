@@ -1,8 +1,17 @@
-# React + Vite
+# NOTE APP
+This project is a notepad application that allows users to save, list, and filter notes based on specific criteria.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- **Add Note**: Users can save notes written in the textarea.
+- **Color Selection**: A color can be selected when adding a new note. The note will be listed in the selected color.
+- **List Notes**: All saved notes are listed on the screen.
+- **Filter Notes**: Users can filter previously written notes using an input field.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+- **React**
+- **HTML**
+- **CSS**
+- **JavaScript**
+  
+## Live Demo
+You can access the live application here: [Notepad Application](https://lighthearted-cendol-b7015f.netlify.app/)
