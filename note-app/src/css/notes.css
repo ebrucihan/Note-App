@@ -1,0 +1,45 @@
+.notes-container {
+  display: flex; /* Esnek kutu düzeni kullan */
+  justify-content: flex-start; /* Soldan başlayarak hizala */
+  align-items: flex-start; /* Yukarıdan başlayarak hizala */
+  flex-wrap: wrap; /* Taşma durumunda alt satıra geç */
+  margin-top: 15px; /* Üst boşluk */
+  padding: 10px; /* İç boşluk */
+  background-color: #f0f0f0c2; /* Arka plan rengi */
+  border-radius: 5px; /* Kenar yuvarlama */
+  min-height: 100px; /* Minimum yükseklik, böylece içindeki notlar büyüdüğünde konteyner de büyüsün */
+}
+
+.note {
+  padding: 10px; /* İç boşluk */
+  margin: 10px; /* Dış boşluk */
+  border-radius: 5px; /* Kenar yuvarlama */
+  max-width: calc(
+    25% - 20px
+  ); /* Her satırda 4 not olacak şekilde genişlik ayarla */
+  flex-basis: calc(25% - 20px); /* 4 kolon oluştur */
+  flex-grow: 0; /* Notların esnemesini engelle */
+  color: white; /* Yazı rengi */
+  font-weight: bold; /* Kalın yazı */
+}
+
+.clear-button {
+  position: fixed;
+  height: 50px;
+  width: 120px;
+  padding: 0 10px;
+  margin-top: 10px; /* Üst boşluk */
+  background-color: #62b477; /* Kırmızı arka plan */
+  color: white; /* Beyaz yazı rengi */
+  border: none; /* Kenarlık kaldır */
+  border-radius: 5px; /* Kenar yuvarlama */
+  cursor: pointer; /* İmleç değişimi */
+  transition: background-color 0.3s; /* Renk geçiş efekti */
+  font-size: 23px;
+  margin-left: 1050px;
+  transform: translateY(30px);
+}
+
+.clear-button:hover {
+  background-color: #c781c3; /* Üzerine gelindiğinde rengi koyulaştır */
+}

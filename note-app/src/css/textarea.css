@@ -1,0 +1,66 @@
+.textarea-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px; /* Container yüksekliği */
+  background-color: #f0f0f0c2; /* Arka plan rengi */
+  border-radius: 5px; /* Kenar yuvarlama */
+  margin-top: 15px; /* Üst boşluk */
+  flex-direction: column; /* Dikey hizalama */
+  padding: 10px; /* İç boşluk */
+}
+
+.color-options {
+  display: flex;
+  margin-right: 940px;
+  transform: translateY(-40px);
+}
+
+.color-option {
+  width: 25px; /* Dairelerin genişliği */
+  height: 25px; /* Dairelerin yüksekliği */
+  border-radius: 50%; /* Yuvarlak şekil */
+  cursor: pointer; /* İmleç değişimi */
+  border: 2px solid transparent; /* Varsayılan kenarlık */
+  transition: border-color 0.3s; /* Kenarlık rengi geçiş efekti */
+  margin-right: 10px;
+}
+
+.note-input {
+  height: 100%; /* Yüksekliği tam kapsayıcı */
+  width: 100%; /* Genişliği tam kapsayıcı */
+  max-width: 1100px; /* Maksimum genişlik */
+  padding: 15px; /* İç boşluk */
+  border: 1px solid #ccc; /* Kenarlık rengi */
+  border-radius: 5px; /* Kenar yuvarlama */
+  font-size: 16px; /* Yazı tipi boyutu */
+  color: #333; /* Yazı rengi */
+  transition: border-color 0.3s; /* Kenarlık rengi geçiş efekti */
+  margin-top: 30px;
+}
+
+.note-input::placeholder {
+  color: #aaa; /* Placeholder rengi */
+}
+
+.note-input:focus {
+  border-color: #c781c3; /* Fokusa girdiğinde kenarlık rengi */
+  outline: none; /* Varsayılan odak hatasını kaldır */
+}
+
+.add-button {
+  margin-left: 990px;
+  margin-top: 15px; /* Üst boşluk */
+  padding: 10px 50px; /* İç boşluk */
+  background-color: #62b477; /* Buton rengi */
+  color: white; /* Yazı rengi */
+  border: none; /* Kenarlık kaldır */
+  border-radius: 5px; /* Kenar yuvarlama */
+  font-size: 23px; /* Yazı tipi boyutu */
+  cursor: pointer; /* İmleç değişimi */
+  transition: background-color 0.3s; /* Renk geçiş efekti */
+}
+
+.add-button:hover {
+  background-color: #c781c3; /* Üzerine gelindiğinde rengi koyulaştır */
+}
